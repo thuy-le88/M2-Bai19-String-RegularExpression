@@ -4,12 +4,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class EmailExample {
-    private static String emailStandard="^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)$";
+    private static String EMAIL_STANDARD_FORMAT ="^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)$";
     private Pattern pattern;
     private Matcher matcher;
 
     public EmailExample() {
-        pattern=Pattern.compile(emailStandard);
+        pattern=Pattern.compile(EMAIL_STANDARD_FORMAT);
     }
 
     public boolean emailValidate(String email) {
