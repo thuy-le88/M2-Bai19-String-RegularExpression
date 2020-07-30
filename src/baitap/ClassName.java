@@ -20,7 +20,7 @@ public class ClassName {
     public static void main(String[] args) {
         ClassName className=new ClassName();
         String[] validName={"C0318G","A0246M"};
-        String[] invalidName={"M038G","P0@23A"};
+        String[] invalidName={"M03812G","P0@23A"};
 
         for (String valid: validName) {
             boolean isValid=className.validate(valid);
